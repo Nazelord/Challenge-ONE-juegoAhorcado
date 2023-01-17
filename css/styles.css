@@ -1,0 +1,231 @@
+:root {
+  --Azul: #0a3871;
+  --colorFondo: #f3f5fc;
+  font-family: "Inter", sans-serif;
+}
+
+/*Ajustes de estilo generales*/
+
+body {
+  background: var(--colorFondo);
+}
+
+.header {
+  margin: 30px 84px;
+}
+
+.header__logo {
+  width: 31.09px;
+}
+
+.botonera {
+  text-align: center;
+}
+
+.botonera__btn {
+  background: none;
+  padding: 16px 30px;
+  border: 1px solid var(--Azul);
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.botonera__btn--azul {
+  background: var(--Azul);
+}
+.botonera__link {
+  color: var(--Azul);
+  text-decoration: none;
+}
+
+.botonera__btn--azul .botonera__link {
+  color: #f3f5fc;
+}
+
+/*Ajustes de Menu de Principal*/
+
+.menu_principal {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu_principal .logoMenu{
+  width: 180px;
+}
+
+.menu_principal .botonera {
+  margin-top: 2%;
+}
+
+.menu_principal .botonera__btn {
+  display: block;
+  margin: 35px auto;
+}
+
+.menu_principal .botonera__btn--azul {
+  padding: 35px 80px;
+}
+
+/*Ajustes area de juego*/
+
+.areaDeJuego {
+  height: 650px;
+}
+
+.areaDeJuego__mensajeFin {
+  position: absolute;
+  top: 40%;
+  left: calc(50% - 180px);
+  display: inline-block;
+  visibility: hidden;
+  width: 270px;
+  
+  margin-top: 0;
+  padding: 50px;
+
+  color: green;
+  font-size: 24px;
+  border: 1px solid #b8c8da;
+  border-radius: 20px;
+  box-shadow: 10px 20px 20px -15px #0a387188; 
+  backdrop-filter: blur(3px);
+  background-color:#f3f5fccc;
+
+  text-align: center;
+  text-shadow: 0px 0px 5px rgb(233, 202, 102);
+}
+
+.imagen {
+  margin: auto;
+  width: 300px;
+}
+
+.imagen img {
+  width: 300px;
+}
+
+.adivinadas {
+  text-align: center;
+}
+
+.adivinadas__letra {
+  display: inline-block;
+  border-bottom: 3px solid var(--Azul);
+  width: 55px;
+  height: 55px;
+  margin: 20px 20px 30px 0;
+  text-align: center;
+  font-size: 48px;
+  vertical-align: bottom;
+}
+
+.erradas {
+  height: 50px;
+  text-align: center;
+}
+
+.erradas__letra {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #495057;
+  font-size: 24px;
+  vertical-align: bottom;
+}
+
+/*Ajustes Menu Palabra Nueva*/
+
+.menu_palabra_nueva {
+  height: 700px;
+}
+
+.menu_palabra_nueva__lienzoTexto {
+  /* border: 1px solid red; */
+  padding: 20px;
+  height: 400px;
+  text-align: center;
+}
+
+.menu_palabra_nueva__textarea {
+  display: inline-block;
+  background: none;
+  border: none;
+  width: 664px;
+  height: 100%;
+  resize: none;
+
+  font-size: 32px;
+  color: var(--Azul);
+}
+
+.menu_palabra_nueva__textarea:focus {
+  outline: none;
+}
+
+.menu_palabra_nueva .botonera {
+  margin: auto;
+  width: 664px;
+  text-align: left;
+}
+
+.advertencia__img {
+  vertical-align: middle;
+}
+.botonera .advertencia__p {
+  display: inline-block;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 12px;
+  width: 90%;
+}
+
+.menu_palabra_nueva .botonera__btn {
+  margin: 0 20px 0 0;
+  width: 309px;
+}
+
+/*Ajustes del Footer*/
+
+.contacto {
+  width: 100%;
+  padding-top: 5px;  
+  text-align: center;
+}
+.contacto__firma {
+  font-size: 16px;
+  margin: 0%;
+}
+
+.contacto__firma a {
+  color: #1276f0;
+}
+
+.contacto__redes {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1em 1em 2em;
+
+}
+
+.contacto__redes--logo {
+  width: 75px;
+}
+
+/*selector rapido de zonas*/
+
+.menu_principal {
+  display: block;
+}
+
+.areaDeJuego {
+  display: none;
+}
+
+.menu_palabra_nueva {
+  display: none;
+}
